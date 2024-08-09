@@ -5,9 +5,9 @@ export default function Footer() {
   return (
     <footer className="bg-muted w-full py-6">
       <div className="container max-w-7xl flex flex-col items-center justify-between gap-4 sm:flex-row">
-        <p className="text-xs text-muted-foreground">
+        <Link href='/' className="text-xs text-muted-foreground">
           {footerConfig?.copyrightText}
-        </p>
+        </Link>
         <nav className="flex items-center gap-4 sm:gap-6">
           {footerConfig?.links.map((link) => (
             <Link

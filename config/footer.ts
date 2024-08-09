@@ -7,7 +7,7 @@ interface FooterConfig {
 }
 
 const footerConfig: FooterConfig = {
-  copyrightText: "© 2024 Acme Inc. All rights reserved.",
+  copyrightText: "© 2024 Online Calculation All rights reserved.",
   links: [
     {
       text: "Terms of Service",

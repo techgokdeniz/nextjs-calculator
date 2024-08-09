@@ -10,7 +10,7 @@ type Config = {
 };
 
 const headerConfig: Config = {
-  title: "Calculator",
+  title: "Online Calculation",
   menu: [
     { name: "Home", href: "/" },
     { name: "Contact", href: "/contact-us" },

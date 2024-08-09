@@ -1,6 +1,6 @@
 const SiteConfig = {
-  domain: "Acmecalculator.com",
-  title: "Online Calculator ands Tools - Free Calculators",
+  domain: "onlinecalculation.com",
+  title: "Online Calculator ands Tools - Online Calculation",
   description:
     "Discover our free online calculators and tools designed to simplify your daily tasks and enhance productivity.",
 };
