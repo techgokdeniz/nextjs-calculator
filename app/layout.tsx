@@ -23,6 +23,13 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: SiteConfig.title,
   description: SiteConfig.description,
+  openGraph: {
+    title: SiteConfig.title,
+    description: SiteConfig.description,
+    type: "website",
+    locale: "en_US",
+    url: `https://${SiteConfig.domain}`,
+  },
 };
 
 export default function RootLayout({

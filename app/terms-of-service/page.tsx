@@ -1,7 +1,7 @@
 import PageContainer from "@/components/page-container";
 import H1 from "@/components/typography/h1";
 import P from "@/components/typography/p";
-import Link from "next/link"; // Link componentini import edin
+import Link from "next/link";
 
 const Paragraph = [
   'The information and tools available on this website are provided "as is," without any guarantees or warranties of any kind.',
@@ -14,7 +14,16 @@ const Paragraph = [
     .
   </>,
   <>
-  This website is intended for informational purposes only. We make every reasonable effort to ensure that the information and tools are accurate, current, and that the website operates smoothly. However, we cannot guarantee the completeness or accuracy of the content provided. We apologize for any errors or inaccuracies that may occur. Should you discover any issues, please notify us via the <Link className="underline" href="/contact-us">contact page.</Link> We will address and correct the problem as swiftly as possible.
+    This website is intended for informational purposes only. We make every
+    reasonable effort to ensure that the information and tools are accurate,
+    current, and that the website operates smoothly. However, we cannot
+    guarantee the completeness or accuracy of the content provided. We apologize
+    for any errors or inaccuracies that may occur. Should you discover any
+    issues, please notify us via the
+    <Link className="underline mx-1" href="/contact-us">
+      contact page.
+    </Link>
+    We will address and correct the problem as swiftly as possible.
   </>,
   "By accessing or using this website, you acknowledge and agree to these Terms of Use.",
 ];
