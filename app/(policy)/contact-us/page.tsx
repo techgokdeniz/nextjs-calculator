@@ -1,8 +1,6 @@
 import PageContainer from "@/components/page-container";
 import H1 from "@/components/typography/h1";
-import H2 from "@/components/typography/h2";
 import P from "@/components/typography/p";
-import Link from "next/link";
 
 const Paragraph = [
   "We're here to help! Whether you have a question, feedback, or need assistance, feel free to reach out to us. Your inquiries are important to us, and we strive to respond as quickly as possible.",
