@@ -5,6 +5,7 @@ import Header from "@/view/header";
 import Footer from "@/view/footer";
 import SiteConfig from "@/config";
 import DynamicBreadcrumb from "@/components/dynamic-breadcrumb";
+import { Analytics } from "@vercel/analytics/react"
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -45,6 +46,7 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
+      <Analytics />
     </html>
   );
 }
