@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     url: `https://${SiteConfig.domain}`,
   },
   alternates: {
-    canonical: `https://${SiteConfig.domain}`,
+    canonical: `https://www.${SiteConfig.domain}`,
   }
 };
 

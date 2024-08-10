@@ -45,7 +45,7 @@ export default function LeftPanel() {
         ))}
       </section>
       <section
-        id="random-tools-area"
+        id="categories-area"
         className=" border p-4 border-black border-opacity-30 rounded-lg bg-gray-100"
       >
         <H3>Categories</H3>
