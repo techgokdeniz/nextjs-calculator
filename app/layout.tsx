@@ -31,6 +31,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: `https://${SiteConfig.domain}`,
   },
+  alternates: {
+    canonical: `https://${SiteConfig.domain}`,
+  }
 };
 
 export default function RootLayout({

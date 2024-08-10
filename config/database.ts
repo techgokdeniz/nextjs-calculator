@@ -10,6 +10,7 @@ export const robotsTxtPath = [
   "other-calculators",
   "text-tools",
   "word-counter",
+  "character-counter",
 ];
 
 type ItemsType = {
@@ -60,6 +61,22 @@ export const pageItems: PageItem[] = [
           "unique word counter",
           "word counter free",
           "word counter tools",
+        ],
+      },
+      {
+        title: "Character Counter",
+        description:
+          "Use our character counter to easily track character and word counts, ensuring your writing meets any specific length requirements.",
+        url: "character-counter",
+        seoTitle: "Character Counter - onlinecalculation.net",
+        seoDescription:
+          "Use our character counter to easily track character and word counts, ensuring your writing meets any specific length requirements.",
+        keywords: [
+          "character counter",
+          "word counter",
+          "unique character counter",
+          "character counter free",
+          "character counter tools",
         ],
       },
     ],

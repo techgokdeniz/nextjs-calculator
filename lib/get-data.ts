@@ -1,3 +1,4 @@
+import SiteConfig from "@/config";
 import { pageItems } from "@/config/database";
 
 type DataProps = {
@@ -15,6 +16,9 @@ export async function getSeoData(props: DataProps) {
     title: itemData?.seoTitle,
     description: itemData?.seoDescription,
     keywords: itemData?.keywords,
+    alternates: {
+      canonical: `https://${SiteConfig.domain}/${pageUrl}`,
+    }
   };
 }
 
