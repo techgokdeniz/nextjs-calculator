@@ -1,17 +1,13 @@
 import { MetadataRoute } from "next";
+import { robotsTxtPath } from "@/config/database";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const BASE_URL = "https://www.onlinecalculation.net";
-  const basePaths = [
-    "contact-us",
-    "terms-of-service",
-    "privacy-policy",
-  ];
 
-  const dynamicPaths = basePaths.map((path) => ({
+  const dynamicPaths = robotsTxtPath.map((path) => ({
     url: `${BASE_URL}/${path}`,
     lastModified: new Date(),
-    changeFrequency: "yearly" as const,
+    changeFrequency: "monthly" as const,
     priority: 0.7,
   }));
 

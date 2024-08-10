@@ -14,7 +14,7 @@ export default function manifest(): MetadataRoute.Manifest {
       {
         src: "/favicon.ico",
         sizes: "any",
-        type: "image/x-icon",
+        type: "favicon",
       },
       {
         src: "/android-chrome-192x192.png",
