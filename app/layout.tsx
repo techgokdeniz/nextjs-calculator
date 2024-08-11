@@ -24,6 +24,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: SiteConfig.title,
   description: SiteConfig.description,
+  keywords: SiteConfig.keywords,
   openGraph: {
     title: SiteConfig.title,
     description: SiteConfig.description,

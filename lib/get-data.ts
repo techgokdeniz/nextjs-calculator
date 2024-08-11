@@ -17,7 +17,7 @@ export async function getSeoData(props: DataProps) {
     description: itemData?.seoDescription,
     keywords: itemData?.keywords,
     alternates: {
-      canonical: `https://${SiteConfig.domain}/${pageUrl}`,
+      canonical: `https://www.${SiteConfig.domain}/${pageUrl}`,
     }
   };
 }

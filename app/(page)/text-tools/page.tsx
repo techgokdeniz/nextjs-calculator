@@ -11,7 +11,7 @@ export async function generateMetadata() {
     description: textTools?.seoDescription,
     keywords: textTools?.keywords,
     alternates: {
-      canonical: `https://${SiteConfig.domain}/${pageUrl}`,
+      canonical: `https://www.${SiteConfig.domain}/${pageUrl}`,
     }
   };
 }
