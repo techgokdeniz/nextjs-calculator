@@ -11,6 +11,7 @@ export const robotsTxtPath = [
   "text-tools",
   "word-counter",
   "character-counter",
+  "sentence-counter",
 ];
 
 type ItemsType = {
@@ -78,6 +79,21 @@ export const pageItems: PageItem[] = [
           "character counter free",
           "character counter tools",
         ],
+      },
+      {
+        title: "Sentence Counter",
+        description: "Use our sentence counter to easily track sentence and word counts, ensuring your writing meets any specific length requirements.",
+        url: "sentence-counter",
+        seoTitle: "Sentence Counter - Count Sentences and Words",
+        seoDescription:
+          "Explore what a sentence counter is and how it works to enhance your writing accuracy and readability. ",
+        keywords: [
+          "sentence counter",
+          "word counter",
+          "unique sentence counter",
+          "sentence counter free",
+          "sentence counter tools",
+        ]
       },
     ],
   },
