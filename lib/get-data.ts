@@ -1,5 +1,5 @@
 import SiteConfig from "@/config";
-import { pageItems } from "@/config/database";
+import { PageItem, pageItems } from "@/config/database";
 
 type DataProps = {
   baseClass: string;
@@ -30,3 +30,14 @@ export async function getFullData (props: DataProps) {
 
   return itemData
 }
+
+export function getRandomItemsFromAnyCategory(){
+  const allItems = pageItems.flatMap(item => item.items);
+  if (allItems.length < 2) {
+    return [];
+  }
+
+  const shuffledItems = [...allItems].sort(() => 0.5 - Math.random());
+  return shuffledItems.slice(0, 2);
+}
+

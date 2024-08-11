@@ -3,23 +3,11 @@ import H3 from "@/components/typography/h3";
 import P from "@/components/typography/p";
 import Span from "@/components/typography/span";
 import { leftPanelCategories } from "@/config/left-panel";
+import { getRandomItemsFromAnyCategory } from "@/lib/get-data";
 import Link from "next/link";
 
-export default function LeftPanel() {
-  const randomTools = [
-    {
-      id: 1,
-      title: "Random Tool 1",
-      description: "Description 1",
-      link: "https://example.com",
-    },
-    {
-      id: 1,
-      title: "Random Tool 2",
-      description: "Description 1",
-      link: "https://example.com",
-    },
-  ];
+export default async function LeftPanel() {
+  const randomTools = await getRandomItemsFromAnyCategory();
 
   return (
     <BasicCardWrapper className="flex gap-4 flex-col border-none p-0">
@@ -32,8 +20,8 @@ export default function LeftPanel() {
           We list the tools or calculators we have randomly selected for you and
           if there is a tool that works for you, you can visit it.
         </P>
-        {randomTools.map((tool) => (
-          <Link href={tool?.link} key={tool?.id}>
+        {randomTools.map((tool, index) => (
+          <Link href={tool?.url} key={index}>
             <BasicCardWrapper
               key={tool.title}
               className="mt-4 border-black border-opacity-30 cursor-pointer hover:bg-white tramsition-all duration-200"
